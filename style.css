@@ -10,7 +10,7 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   height: 100vh;
-  overflow: hidden; 
+  /* overflow: hidden;  */
   align-items: center;
   
 }
@@ -27,7 +27,7 @@ header {
     border-bottom-left-radius: 100px;
     shape-outside: polygon(32px 126px 163px 32px, 293px 127px, 244px 282px 82px 281px);
     margin-bottom: 0;
-    /* margin-bottom: 100px; */
+    
 }
 
 .banner {
@@ -38,8 +38,7 @@ header {
 
 ul {
     display: flex;
-    list-style-type: none;
-    
+    list-style-type: none; 
 } 
 
 a {
@@ -91,52 +90,87 @@ button {
     margin-top: 40px;
 }
 
-/* .enter {
-    position: relative;
+h2 {
     text-align: center;
-    top: -180px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header .header-content  {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* header .header-content .logo img {
-    width: 65px; 
+    padding-top: 70px;
+    color: hsl(237, 17%, 21%);
 }
 
- /*header .header-content .main {
-    position: absolute; */
-    /* background: white;
-    width: 90%;
-    height: auto;
-    margin: 105px auto 0 auto;
-    padding: 30px 20px 0 20px;
-    border-radius: 10px;
-     
+.copy {
+    display: inline-block;
+    margin-left: 50px;
+    width: 40%;  
 }
 
+.section-two {
+    padding-bottom: 100px;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 120% 20%;
+}
+
+.section-two h2 {
+    text-align: center;
+}
+
+.section-two h2, p {
+    color: hsl(207, 13%, 34%);  
+}
+
+.overlay {
+    float: right;
+    width: 500px;
+    height: 500px;
+    transform: translate(100px, -420px);
+} 
+
+.middle-container {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: hsl(208, 49%, 24%); 
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: -20% 160%;
+    border-top-right-radius: 100px;
+}
+
+.state p, h2 {
+    color: #fff;
+    margin-left: 50%;
+    margin-right: 100px;
+}
+
+/* .state h2 {
+    margin-left: 42%;
+} */
+
+/* .circle {
+    width: 400px;
+    height: 400px;
+    transform: translate(-100px, -320px);
+} */
+.product {
+    width: 40%;
+    transform: translateY(-500px);
+}
+
+.section-three {
+    margin-top: 40px; 
+}
+
+footer {
+    background-color: hsl(237, 17%, 21%);
+    color: #fff;
+    width: 100%;
+    height: 400px;
+}
+ 
+
+
+    
 
 
 /* li, a, button {
