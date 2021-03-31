@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 * {
   box-sizing: border-box;
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0; 
+  padding: 0;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+    font-family: 'Overpass', sans-serif;
   /* display: flex; */
   /* flex-direction: column; */
-  height: 100vh;
+    height: 100vh;
   /* overflow: hidden;  */
-  align-items: center;
+  /* align-items: center; */
   
 }
 
@@ -25,55 +28,83 @@ header {
     background-position: 17% 50%;
     /* background-position: 35% 39%; */
     border-bottom-left-radius: 100px;
-    shape-outside: polygon(32px 126px 163px 32px, 293px 127px, 244px 282px 82px 281px);
-    margin-bottom: 0;
-    
+    /* shape-outside: polygon(32px 126px 163px 32px, 293px 127px, 244px 282px 82px 281px); */  
 }
 
 .banner {
     display: flex;
-    /* justify-content: space-around; */
-    padding: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 20px 20px 10px;
+}
+
+.logo {
+    /* margin-right: auto; */
+    margin-left: 140px;
+}
+
+.nav {
+    margin: 0 auto 0 60px;
 }
 
 ul {
+    font-size: 16px;
     display: flex;
-    list-style-type: none; 
-} 
+    /* justify-content: flex-start; */
+    list-style: none;
+    /* margin-right: auto; */
+}  
+.item {
+    padding: 10px;
+}
 
 a {
     color: #fff;
     text-decoration: none;
+    padding-right: 5px;
 }
 
 button {
-    padding: 9px 25px;
+    padding: 9px 20px;
     background-color: #fff;
-    border: none;
+    /* border: none; */
     border-radius: 50px;
     cursor: pointer;
+    margin: 0 5px;
 }
 
 .login {
-    margin-left: 350px;
+    float: right;
+    padding-right: 100px;
 }
 
 .login .button-first {
-    background-color: hsl(355, 100%, 74%);
+    /* background-color: hsl(355, 100%, 74%); */
+    background-color: rgb(255, 122, 133, 0.0);
     color: white;
+    border: none;
+    
 }
 
 .login .button-end {
     color: hsl(356, 100%, 66%);
+    border: none;
+}
+
+.buttons-hero {
+    /* padding: 0 10px; */
 }
 
 .buttons-hero .free {
-    background-color: hsl(355, 100%, 74%);
+    background-color: rgb(255, 122, 133, 0.0);
     color: white;
+    border: 1px solid #fff;
+    
 }
 
 .buttons-hero .start {
     color: hsl(356, 100%, 66%);
+    border: none;
 }
 
 .hero {
@@ -84,43 +115,50 @@ button {
     color: #fff;
 }
 
+.hero h1 {
+    padding-top: 30px;
+    font-size: 60px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 16px;
+}
+
 .buttons-hero {
     position: relative;
     text-align: center;
     margin-top: 40px;
 }
 
-h2 {
+.section-two h2 {
     text-align: center;
     padding-top: 70px;
-    color: hsl(237, 17%, 21%);
+    color: hsl(208, 49%, 24%);
 }
 
 .copy {
     display: inline-block;
-    margin-left: 50px;
+    margin: 50px 0 0 100px;
     width: 40%;  
 }
 
 .section-two {
-    padding-bottom: 100px;
+    padding-bottom: 250px;
     background-image: url(../images/illustration-editor-desktop.svg);
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position: 120% 20%;
+    background-position: 125% 45%;
 }
 
-.section-two h2 {
-    text-align: center;
-}
-
-.section-two h2, p {
+.section-two p {
     color: hsl(207, 13%, 34%);  
+    
 }
 
 .overlay {
     float: right;
-    width: 500px;
+    width: 500px; 
     height: 500px;
     transform: translate(100px, -420px);
 } 
@@ -128,7 +166,7 @@ h2 {
 .middle-container {
     margin-top: 100px;
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: hsl(208, 49%, 24%); 
     background-image: url(../images/bg-pattern-circles.svg);
     background-size: 50%;
@@ -139,8 +177,8 @@ h2 {
 
 .state p, h2 {
     color: #fff;
-    margin-left: 50%;
-    margin-right: 100px;
+    /* margin-left: 50%;
+    margin-right: 100px; */
 }
 
 /* .state h2 {
@@ -154,7 +192,7 @@ h2 {
 } */
 .product {
     width: 40%;
-    transform: translateY(-500px);
+    /* transform: translateY(-500px); */
 }
 
 .section-three {
@@ -340,3 +378,9 @@ h1, p {
     width: 30%;
     justify-content: center;
 }  */
+
+
+@media screen and (max-width: 375px) {
+    
+
+  }
